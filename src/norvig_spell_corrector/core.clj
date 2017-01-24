@@ -65,7 +65,7 @@
    (known [word])
    (known (edits1 word))
    (known (edits2 word))
-  ))
+   [word]))
 
 (defn correction [word]
   (->> word
