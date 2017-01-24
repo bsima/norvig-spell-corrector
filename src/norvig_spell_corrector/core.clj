@@ -37,9 +37,7 @@
         inserts    (flatten
                     (for [c letters]
                       (map (fn [[l r]] (apply str l c r)) splits)))]
-    (->> [deletes transposes replaces inserts]
-         (apply concat)
-         (into #{}))))
+    (into #{} (concat deletes transposes replaces inserts))))
 
 
 (defn edits2 [word]
