@@ -19,7 +19,7 @@
   (/ cnt total))
 
 
-;; need to convert this to regular clojure, not python
+;; pretty sure this is what needs optimized...
 (defn edits1 [word]
   (let [letters    "abcdefghijklmniopqrstuvwxyz"
         splits     (for [i (range 0 (inc (count word)))]
